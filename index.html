@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script defer src="https://use.fontawesome.com/releases/v6.1.1/js/all.js" integrity="sha384-xBXmu0dk1bEoiwd71wOonQLyH+VpgR1XcDH3rtxrLww5ajNTuMvBdL5SOiFZnNdp" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
@@ -74,24 +75,21 @@
                         <p class="font-bebas text-black text-8xl">PROYECTOS</p>
                     </div>
                     <div
+                        data-aos="fade-up" data-aos-duration="1000"
                         class="mt-12 relative w-full grayscale hover:filter-none text-gray-50 hover:text-black hover:filter-none hover:duration-1000  overflow-hidden grid grid-cols-13">
                         <img src="./img/cintura2.JPG" alt="cintura2" class="object-cover w-full h-full " />
                         <a href="pages/proyectos/poder"
                             class="font-bebas text-6xl hover:text-white hover:duration-1000  absolute justify-self-center self-center">PODER</a>
                     </div>
-
-                    <!-- <div class="mt-6 row-start-2 relative w-full grayscale hover:filter-none text-slate-300 hover:text-black hover:filter-none hover:duration-1000  overflow-hidden grid grid-cols-13">
-                    <img src="./img/diseño1.JPG" alt="diseño" class="object-cover w-full h-full "/>
-                    <a href="pages/proyectos/poder" class="font-bebas text-6xl hover:text-white hover:duration-1000  absolute justify-self-center self-center">BESTIR</a>
-                  </div> -->
-
                     <div
+                        data-aos="fade-up" data-aos-duration="1000" 
                         class="mt-6 row-start-3 relative w-full grayscale hover:filter-none text-gray-50 hover:text-black hover:filter-none hover:duration-1000  overflow-hidden grid grid-cols-13">
                         <img src="./img/perspectiva.jpeg" alt="BESTIR" class="object-cover w-full h-full " />
                         <a href="pages/proyectos/poder"
                             class="font-bebas text-6xl hover:text-white hover:duration-1000  absolute justify-self-center self-center">BESTIR</a>
                     </div>
                     <div
+                        data-aos="fade-up" data-aos-duration="1000"
                         class="mt-6 row-start-4 relative w-full grayscale hover:filter-none text-gray-50 hover:text-black hover:filter-none hover:duration-1000  overflow-hidden grid grid-cols-13">
                         <img src="./img/coordenadaSur.jpeg" alt="coordenadaSur" class="object-cover w-full " />
                         <a href="pages/proyectos/poder"
@@ -106,10 +104,10 @@
                             <p id="aboutMe" class="mt-36 font-bebas text-black whitespace-nowrap text-8xl">ABOUT ME</p>
                         </div>
                         <div class="row-start-2 row-end-4 col-start-2 col-end-6 self-start -mt-20 ">
-                            <img src="./img/me.png" alt="me" />
+                            <img data-aos="fade-up" data-aos-duration="1000" src="./img/me.png" alt="me" />
                         </div>
                         <div class="row-start-2 self-center ml-16 col-start-6 col-end-9 ">
-                            <p class="font-sans text-black">
+                            <p data-aos="fade-up" data-aos-duration="1000" class="font-sans text-black">
 
                                 La moda incomoda, la moda juega con los límites y rompe con lo ya establecido, nos
                                 desafia replantearnos la conocida cotidaneidad. La moda nos hace hacer foco en aspectos
@@ -118,7 +116,7 @@
                             </p>
                         </div>
                         <div class="row-start-3 col-start-8 col-end-12 -mt-4">
-                            <img src="./img/miTrabajo.png" alt="miTrabajo" />
+                            <img data-aos="fade-up" data-aos-duration="1000" src="./img/miTrabajo.png" alt="miTrabajo" />
                         </div>
                     </div>
                 </div>
@@ -130,8 +128,8 @@
                 </div>
 
                 <div id="contacto" class="row-start-7 grid grid-rows-3 col-start-1 col-end-13 grid grid-cols-3 bg-black">
-                    <div class="row-start-1 mt-36 col-start-2 text-center self-start justify-self-center">
-                        <p class="text-center font-bebas text-white text-8xl">CONTACTO</p>
+                    <div  class="row-start-1 mt-36 col-start-2 text-center self-start justify-self-center">
+                        <p  class="text-center font-bebas text-white text-8xl">CONTACTO</p>
                     </div>
                     <div class="row-start-2 col-start-1 col-end-2 self-end justify-self-center">
                         <a target="_blank" href="https://instagram.com/lour_arte.indumentaria?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram fa-2xl text-6xl text-white "></i></a>
@@ -156,6 +154,12 @@
         </div>
     </footer>
 
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
