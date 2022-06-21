@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script defer src="https://use.fontawesome.com/releases/v6.1.1/js/all.js" integrity="sha384-xBXmu0dk1bEoiwd71wOonQLyH+VpgR1XcDH3rtxrLww5ajNTuMvBdL5SOiFZnNdp" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script>
         tailwind.config = {
             theme: {
@@ -59,7 +60,7 @@
     <main>
         <section>
 
-            <div class="grid grid-cols-12 grid-rows-12">
+            <div class="grid grid-cols-12 grid-rows-12 gap-20">
                 <div class="row-start-1  row-end-1 col-start-8 col-end-13 justify-self-end self-end -mt-40 mr-12 ">
                     <img src="./img/inicio.png" alt="inicio" />
                 </div>
@@ -70,55 +71,50 @@
                         del día a día, retomarlos, y de esta forma resignificarlos.
                     </p>
                 </div>
-                <div id="proyectos" class="mt-16 py-20 col-start-1 col-end-13 self-end bg-white min-h-screen">
-                    <div class="text-center self-start">
-                        <p class="font-bebas text-black text-8xl">PROYECTOS</p>
-                    </div>
-                    <div
-                        
-                        class="mt-12 relative w-full grayscale hover:filter-none text-gray-50 hover:text-black hover:filter-none hover:duration-1000  overflow-hidden grid grid-cols-13">
-                        <img data-aos="fade-up" data-aos-duration="1000" src="./img/cintura2.JPG" alt="cintura2" class="object-cover w-full h-full " />
-                        <a 
-                      
-                        href="pages/proyectos/poder"
-                            class="duration-1000 font-bebas text-6xl hover:text-white hover:duration-500  absolute justify-self-center self-center">PODER</a>
-                    </div>
-                    <div
-                        
-                        class="mt-6 row-start-3 relative w-full grayscale hover:filter-none text-gray-50 hover:text-black hover:filter-none hover:duration-1000  overflow-hidden grid grid-cols-13">
-                        <img data-aos="fade-up" data-aos-duration="1000"  src="./img/perspectiva.jpeg" alt="BESTIR" class="object-cover w-full h-full " />
-                        <a 
-  
-                        href="pages/proyectos/poder"
-                            class=" font-bebas text-6xl hover:text-white hover:duration-500 absolute justify-self-center self-center">BESTIR</a>
-                    </div>
-                    <div
-                        class="mt-6 row-start-4 relative w-full grayscale hover:filter-none text-gray-50 hover:text-black hover:filter-none hover:duration-1000  overflow-hidden grid grid-cols-13">
-                        <img data-aos="fade-up" data-aos-duration="1000" src="./img/coordenadaSur.jpeg" alt="coordenadaSur" class="object-cover w-full " />
-                        <a 
-                         
-                        href="pages/proyectos/poder"
-                            class="font-bebas text-6xl hover:text-white hover:duration-500  absolute justify-self-center self-center">COORDENADA
-                            SUR</a>
+
+                <div class="row-start-2 self-center justify-self-start col-start-1 col-end-13 grid grid-cols-12">
+                    <div class="col-start-1 col-end-13">
+                        <video class="w-screen" src="./img/FashionFilm1.mov" autoplay muted></video>
                     </div>
                 </div>
 
-                <div class="-mt-12 self-start row-start-5 col-start-1 bg-white col-end-13 min-h-screen">
+                <div id="proyectos" class="col-start-1 col-end-13 self-start">
+                    <div
+                        class="relative w-full grayscale hover:filter-none text-gray-50 hover:text-black hover:filter-none hover:duration-1000  overflow-hidden grid grid-cols-12"
+                        >
+                            <img data-aos="fade-up" data-aos-duration="1000" src="./img/cintura2.JPG" alt="cintura2" class="col-start-1 col-end-13 object-cover w-full h-full " />
+                    
+                            <a 
+                            id="PODER"
+                                class="font-bebas text-6xl hover:text-white hover:duration-500  absolute justify-self-center self-center">PODER</a>                  
+                            <div id="fadePoder" class="absolute col-start-9 col-end-12 self-center justify-self-center z-50"></div>
+                    </div>
+                    <div
+                        
+                        class="mt-6 row-start-3 relative w-full grayscale hover:filter-none text-gray-50 hover:text-black hover:filter-none hover:duration-1000  overflow-hidden grid grid-cols-12">
+                        <img data-aos="fade-up" data-aos-duration="1000"  src="./img/perspectiva.jpeg" alt="BESTIR" class="col-start-1 col-end-13 object-cover w-full h-full " />
+                        <a 
+                        id="BESTIR"
+                            class=" font-bebas text-6xl hover:text-white hover:duration-500 absolute justify-self-center self-center">BESTIR</a>
+                        <div id="fadeBestir" class="absolute col-start-9 col-end-12 self-center justify-self-center z-50"></div>
+                        
+
+                    </div>
+                    <div
+                        class="mt-6 row-start-4 relative w-full grayscale hover:filter-none text-gray-50 hover:text-black hover:filter-none hover:duration-1000  overflow-hidden grid grid-cols-12">
+                        <img data-aos="fade-up" data-aos-duration="1000" src="./img/coordenadaSur.jpeg" alt="coordenadaSur" class="col-start-1 col-end-13 object-cover w-full " />
+                        <a 
+                        id="COORDERNADASUR"
+                            class="font-bebas text-6xl hover:text-white hover:duration-500  absolute justify-self-center self-center">COORDENADA
+                            SUR</a>
+                        <div id="fadeCoordenadaSur" class="absolute col-start-9 col-end-12 self-center justify-self-center z-50"></div>
+                    
+                    </div>
+                </div>
+                <div class="-mt-48 self-start col-start-1 col-end-12">
                     <div class="grid grid-cols-12 grid-rows-4 gap-8">
-                        <div class="col-start-6 row-start-1 text-center self-start ">
-                            <p id="aboutMe" class="mt-36 font-bebas text-black whitespace-nowrap text-8xl">ABOUT ME</p>
-                        </div>
                         <div class="row-start-2 row-end-4 col-start-2 col-end-6 self-start -mt-20 ">
                             <img data-aos="fade-up" data-aos-duration="1000" src="./img/me.png" alt="me" />
-                        </div>
-                        <div class="row-start-2 self-center ml-16 col-start-6 col-end-9 ">
-                            <p data-aos="fade-up" data-aos-duration="1000" class="font-sans text-black">
-
-                                La moda incomoda, la moda juega con los límites y rompe con lo ya establecido, nos
-                                desafia replantearnos la conocida cotidianeidad. La moda nos hace hacer foco en aspectos
-                                del día a día, retomarlos, y de esta forma resignificarlos.
-
-                            </p>
                         </div>
                         <div class="row-start-3 col-start-8 col-end-12 -mt-4">
                             <img data-aos="fade-up" data-aos-duration="1000" src="./img/miTrabajo.png" alt="miTrabajo" />
@@ -126,24 +122,16 @@
                     </div>
                 </div>
 
-                <div class="-mt-36 row-start-6 self-start justify-self-start col-start-1 col-end-13 grid grid-cols-12">
-                    <div class="col-start-1 col-end-13">
-                        <video class="w-screen" src="./img/FashionFilm1.mov" autoplay muted></video>
-                    </div>
-                </div>
 
-                <div id="contacto" class="row-start-7 grid grid-rows-3 col-start-1 col-end-13 grid grid-cols-3 bg-black">
-                    <div  class="row-start-1 mt-36 col-start-2 text-center self-start justify-self-center">
-                        <p  class="text-center font-bebas text-white text-8xl">CONTACTO</p>
-                    </div>
+                <div id="contacto" class="-mt-60 self-start row-start-5 grid grid-rows-3 col-start-1 col-end-13 grid grid-cols-13">
                     <div class="row-start-2 col-start-1 col-end-2 self-end justify-self-center">
-                        <a target="_blank" href="https://instagram.com/lour_arte.indumentaria?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram fa-2xl text-6xl text-white "></i></a>
+                        <a target="_blank" href="https://instagram.com/lour_arte.indumentaria?igshid=YmMyMTA2M2Y="><i class="fa-brands fa-instagram fa-2xl text-6xl text-black "></i></a>
                     </div>
                     <div class="row-start-2 col-start-2 col-end-3 self-end justify-self-center">
-                        <a href="mailto:lourdesmariaromero@gmail.com"><i class="fa-solid fa-envelope fa-2xl text-6xl text-white "></i></a>
+                        <a href="mailto:lourdesmariaromero@gmail.com"><i class="fa-solid fa-envelope fa-2xl text-6xl text-black "></i></a>
                     </div>
                     <div class="row-start-2 col-start-3 self-end justify-self-center">
-                        <a target="_blank" href="https://drive.google.com/file/d/1O5Tdx3IYzxwUqv21KdqfCFEGAwjABNoS/view?usp=sharing"><i class="fa-solid fa-image-portrait fa-2xl text-6xl text-white"></i></a>
+                        <a target="_blank" href="https://drive.google.com/file/d/1O5Tdx3IYzxwUqv21KdqfCFEGAwjABNoS/view?usp=sharing"><i class="fa-solid fa-image-portrait fa-2xl text-6xl text-black"></i></a>
                     </div>
                 </div>
             </div>
@@ -164,6 +152,33 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+       $('#PODER').mouseover(() => {
+           const proyectPoder = document.getElementById('fadePoder');
+           proyectPoder.innerHTML = '<h1 data-aos="fade-left" id="fadePoderH1" class="font-bebas text-2xl text-white  font-black shadow-6xl">El cine durante el período de la Segunda Guerra Mundial, fué un refugio para la sociedad. La influencia de Holliwood trajo el estereotipo de una mujer independiente. Se retoma una estética clásica francesa y americana, utilizando sastrería típica de la década de los años 40, fusionando la elegancia elocuente de las ícono del cine, y la postguerra.</h1>'
+       })
+       $('#PODER').mouseout(() => {
+           const proyectPoder = document.getElementById('fadePoder');
+           proyectPoder.innerHTML = ''
+       })
+
+       $('#BESTIR').mouseover(() => {
+           const proyectBestir = document.getElementById('fadeBestir');
+           proyectBestir.innerHTML = `<h1 data-aos="fade-left" id="fadeBestirH1" class="font-bebas text-2xl text-white font-black shadow-6xl">Bestir es la vida irracional. Es calentar la comida en la heladera y enfriarla en el microondas. Una vida donde la coherencia es incoherente, donde prendes la luz para dormir y la apagas al despertar. Una vida en contra de la lógica y a favor de lo espontáneo, donde cenas cuando te despertas y desayunas al irte a dormir. Una vida en donde exteriorizamos la libertad.</h1>`
+          
+        });
+        $('#BESTIR').mouseout(() => {
+           const proyectBestir = document.getElementById('fadeBestir');
+           proyectBestir.innerHTML = ``
+        });
+
+        $('#COORDERNADASUR').mouseover(() => {
+           const proyectCoordenadaSur = document.getElementById('fadeCoordenadaSur');
+           proyectCoordenadaSur.innerHTML =  `<h1 data-aos="fade-left" id="fadeBestirH1" class="font-bebas text-2xl text-white font-black shadow-6xl">Millones de expediciones salieron, pocas llegaron a destino. Millones de fragatas en alta mar partieron y se destruyeron en el camino. El hostil clima sub antártico arrasa con todo a su paso, inclusive los naufragios. A los 57 51 0 de la plataforma continental argentina, existen dos extenciones naturales llenas de vida animal y de tierra hinóspita humana, que desde tiempos inmemorables siempre fue invadida. Ambiente deseado por la vanidad de la sociedad a pesar de su locación lejana y su frígido, desolado y despojado clima extremo.</h1>`
+        });
+        $('#COORDERNADASUR').mouseout(() => {
+           const proyectCoordenadaSur = document.getElementById('fadeCoordenadaSur');
+           proyectCoordenadaSur.innerHTML = ``
+        });
     </script>
 </body>
 
